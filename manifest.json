@@ -1,0 +1,16 @@
+{
+  "name": "cw",
+  "manifest_version": 2,
+  "version": "0",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*/*"
+      ],
+      "run_at": "document_idle",
+      "js": [
+        "injection.js"
+      ]
+    }
+  ]
+}

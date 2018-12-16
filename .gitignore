@@ -1,0 +1,14 @@
+# IDEs and editors
+/.idea/*
+!/.idea/codeStyles
+!/.idea/dictionaries
+
+# Logs
+yarn-debug.log*
+yarn-error.log*
+
+# dependencies
+node_modules/
+
+# compiled output
+build/
