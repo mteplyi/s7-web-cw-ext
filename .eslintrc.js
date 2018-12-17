@@ -1,5 +1,8 @@
 module.exports = {
-  extends: ['react-app', 'airbnb-base'],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb-base',
+  ],
   env: {
     browser: true,
     es6: true,
