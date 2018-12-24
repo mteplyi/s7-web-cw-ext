@@ -11,4 +11,5 @@ yarn-error.log*
 node_modules/
 
 # compiled output
+dist/
 build/

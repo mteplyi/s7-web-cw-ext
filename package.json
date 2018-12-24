@@ -3,11 +3,12 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "lint": "eslint --ext js,jsx ."
   },
   "husky": {
     "hooks": {
-      "pre-commit": "eslint ."
+      "pre-commit": "yarn lint"
     }
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "style-loader": "^0.23.1",
