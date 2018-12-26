@@ -1,22 +1,24 @@
 module.exports = {
   mode: 'development',
+  // mode: 'production',
+  entry: {
+    injection: './src',
+  },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
-        use: {
-          loader: 'babel-loader',
-        },
+        use: 'babel-loader',
       },
       {
         test: /\.css$/,
         use: [
-          { loader: 'style-loader' },
+          'style-loader',
           {
             loader: 'css-loader',
             options: {
               modules: true,
-              localIdentName: '[local]_[sha1:hash:base64]',
+              localIdentName: '[local]_[sha1:hash:base64:4]',
             },
           },
         ],
