@@ -17,6 +17,7 @@ export default class NoteList extends Component {
   componentDidMount() {
     notesApi.get()
       .then((notes) => {
+        notes.sort((note1, note2) => note1.id - note2.id);
         console.log('GET:', notes);
         this.setState({
           loading: false,
