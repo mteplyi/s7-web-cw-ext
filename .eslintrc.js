@@ -32,5 +32,6 @@ module.exports = {
     'newline-per-chained-call': 'off',
     'no-console': 'off',
     'no-plusplus': 'off',
+    'react/prop-types': 'off',
   },
 };

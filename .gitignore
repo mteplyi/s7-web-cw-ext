@@ -7,9 +7,11 @@
 yarn-debug.log*
 yarn-error.log*
 
-# dependencies
+# Dependencies
 node_modules/
 
-# compiled output
-dist/
-build/
+# Compiled output
+extension/
+
+# Environment files
+.env

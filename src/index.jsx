@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import styles from './index.css';
+import styles from './index.scss';
 
 const rootElement = document.createElement('div');
 rootElement.className = styles['CW-root'];

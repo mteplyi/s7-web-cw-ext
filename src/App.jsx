@@ -1,21 +1,34 @@
 import React, { Component } from 'react';
-import styles from './App.css';
+import styles from './App.scss';
+import NoteList from './NoteList';
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      expanded: false,
+    };
+  }
+
+  switchExpanded() {
+    const { expanded } = this.state;
+    this.setState({
+      expanded: !expanded,
+    });
+  }
+
   render() {
+    const {
+      expanded,
+    } = this.state;
+
     return (
       <div className={styles.App}>
-        <header className={styles['App-header']}>
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a className={styles['App-link']}
-             href="https://reactjs.org"
-             target="_blank"
-             rel="noopener noreferrer">
-            Learn React
-          </a>
-        </header>
+        {expanded && <NoteList/>}
+        <div className={styles['App-switcher']}
+             onClick={() => this.switchExpanded()}>
+          <span>{expanded ? '<' : '>'}</span>
+        </div>
       </div>
     );
   }

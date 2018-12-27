@@ -2,13 +2,9 @@
   "name": "cw-ext",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "build": "webpack",
-    "lint": "eslint --ext js,jsx ."
-  },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "eslint --ext js,jsx ."
     }
   },
   "dependencies": {
@@ -16,10 +12,14 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
     "babel-loader": "^8.0.4",
+    "copy-webpack-plugin": "^4.6.0",
     "css-loader": "^2.1.0",
+    "node-sass": "^4.11.0",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2"

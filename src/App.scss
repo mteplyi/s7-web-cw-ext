@@ -1,0 +1,24 @@
+.App {
+  box-shadow: 1px 1px 4px 2px #ccc;
+  position: relative;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  background: white;
+}
+
+.App-switcher {
+  width: 25px;
+  display: flex;
+  background: chocolate;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  span {
+    font-size: 25px;
+    color: white;
+    user-select: none;
+    //font-weight: bold;
+  }
+}

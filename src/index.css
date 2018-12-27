@@ -1,9 +1,0 @@
-.CW-root {
-    position: fixed;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 300px;
-    height: 500px;
-    overflow: hidden;
-}
